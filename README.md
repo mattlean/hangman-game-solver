@@ -39,13 +39,6 @@ A valid lexicon must have the following properties:
 | **h**     | Activate hard mode. Reduces the amount of guesses from 8 to 6.                |
 | **r**     | Activate rush mode. Play through a randomized sequence of the entire lexicon. |
 
-### Code Structure
-- [hangman.js](./hangman.js): Main file which creates `HangmanGame` instance.
-- [HangmanGame.js](./HangmanGame.js): `HangmanGame` class that runs the game logic.
-- [HangmanLexicon.js](./HangmanLexicon.js): `HangmanLexicon` class that handles lexicon file parsing and selecting words for `HangmanGame` to use as answers.
-- [SimpleCLIOptionMan.js](./SimpleCLIOptionMan.js): `SimpleCLIOptionMan` class which is a simple CLI option manager.
-- [util.js](./util.js): Some miscellaneous utility functions.
-
 ## Running the Solver
 This is the command for running the solver bot:
 ```
@@ -70,3 +63,11 @@ After the entire lexicon is played, a score showing the amount of correctly gues
 | Character | Description                                                                   |
 |-----------|-------------------------------------------------------------------------------|
 | **d**     | Activate debug mode. Logs extra information to the terminal.                  |
+
+## Code Structure
+- [hangman.js](./hangman.js): Main file which creates `HangmanGame` instance.
+- [HangmanGame.js](./HangmanGame.js): `HangmanGame` class that runs the game logic.
+- [HangmanLexicon.js](./HangmanLexicon.js): `HangmanLexicon` class that handles lexicon file parsing and selecting words for `HangmanGame` to use as answers.
+- [hangmanSolver.js](./HangmanSolver.js): Contains all Hangman solver bot code.
+- [SimpleCLIOptionMan.js](./SimpleCLIOptionMan.js): `SimpleCLIOptionMan` class which is a simple CLI option manager.
+- [util.js](./util.js): Some miscellaneous utility functions.
