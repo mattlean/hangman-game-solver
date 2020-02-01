@@ -3,7 +3,7 @@
  * Hangman game played with the command line.
  * 
  * The game will give the player 8 tries to guess the word.
- * The word is randomly selected from a pool of words determined in the lexicon text file.
+ * Each word is randomly selected from a pool of words determined in the lexicon text file.
  * Guessing an incorrect letter will decrement the amount of remaining guesses by 1.
  * Guessing a new correct letter will not change the amount of remaining guesses.
  * Guessing an already found correct letter will also not change the amount of remaining guesses.
