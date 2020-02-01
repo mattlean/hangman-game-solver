@@ -33,8 +33,8 @@ A valid lexicon must have the following properties:
 - Words can only be comprised of alphabetical characters.
 
 ### Options
-| Character | Description                                                                     |
-|-----------|---------------------------------------------------------------------------------|
-| **d**     | Activate debug mode. Logs extra information to the terminal.                    |
-| **h**     | Activate hard mode. Reduce the amount of guesses from 8 to 6.                   |
-| **r**     | Activate rush mode. Played through a randomized sequence of the entire lexicon. |
+| Character | Description                                                                   |
+|-----------|-------------------------------------------------------------------------------|
+| **d**     | Activate debug mode. Logs extra information to the terminal.                  |
+| **h**     | Activate hard mode. Reduces the amount of guesses from 8 to 6.                |
+| **r**     | Activate rush mode. Play through a randomized sequence of the entire lexicon. |

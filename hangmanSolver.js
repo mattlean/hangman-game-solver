@@ -181,18 +181,27 @@ const print = (txt) => {
   }
 }
 
+let lexiconLoc = null
 if(process.argv.length === 3) {
+  lexiconLoc = process.argv[2]
+} else if(process.argv.length === 4) {
   const options = new SimpleCLIOptionMan(process.argv[2])
   state.debugMode = options.getFlag('d')
+  lexiconLoc = process.argv[3]
   print('< DEBUG MODE ACTIVATED >')
-} else if(process.argv.length > 3) {
+} else if(process.argv.length > 4) {
   throw new Error('Too many command line arguments.')
+}
+
+// Handle case where no text file is passed in
+if(!lexiconLoc) {
+  throw new Error('Please specify lexicon to read from.')
 }
 
 console.log('< Starting Hangman solver... >')
 
 // Run game as child process
-const child = spawn('node', ['./hangman', '-dhr', './lexiconB.txt'])
+const child = spawn('node', ['./hangman', '-dhr', lexiconLoc])
 
 // Handle when the child process outputs data
 child.stdout.on('data', (data) => {
