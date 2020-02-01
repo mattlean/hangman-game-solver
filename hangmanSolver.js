@@ -5,7 +5,7 @@
  * For the remaining guesses of the game, it will guess random unused characters.
  */
 const { spawn } = require('child_process')
-const SimpleCLIOptionHandler = require('./SimpleCLIOptionHandler')
+const SimpleCLIOptionMan = require('./SimpleCLIOptionMan')
 const { getRandInt } = require('./util')
 
 /**
@@ -182,7 +182,7 @@ const print = (txt) => {
 }
 
 if(process.argv.length === 3) {
-  const options = new SimpleCLIOptionHandler(process.argv[2])
+  const options = new SimpleCLIOptionMan(process.argv[2])
   state.debugMode = options.getFlag('d')
   print('< DEBUG MODE ACTIVATED >')
 } else if(process.argv.length > 3) {

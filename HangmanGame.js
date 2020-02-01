@@ -14,7 +14,7 @@
  */
 const readline = require('readline')
 const HangmanLexicon = require('./HangmanLexicon')
-const SimpleCLIOptionHandler = require('./SimpleCLIOptionHandler')
+const SimpleCLIOptionMan = require('./SimpleCLIOptionMan')
 
 // Use readline module to take user input from command line
 const rl = readline.createInterface({
@@ -42,7 +42,7 @@ class HangmanGame {
     }
 
     if(cliOptions) {
-      const options = new SimpleCLIOptionHandler(cliOptions)
+      const options = new SimpleCLIOptionMan(cliOptions)
   
       if(options.getFlag('d')) {
         this.debugMode = true

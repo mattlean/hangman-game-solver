@@ -1,14 +1,14 @@
 /**
- * Simple CLI option handler
+ * Simple CLI option manager
  * @member {Set} options Set that stores options as flags
  */
-class SimpleCLIOptionHandler {
+class SimpleCLIOptionMan {
   /**
-   * Creates simple CLI option handler instance
+   * Creates simple CLI option manager instance
    * @param {string} o String of options starting with the '-' character
    */
   constructor(o) {
-    if(!o) throw new Error('Options must be given SimpleCLIOptions.')
+    if(!o) throw new Error('Options must be given to SimpleCLIOptionMan.')
 
     if(o[0] !== '-') throw new Error('Improper option format.')
 
@@ -29,4 +29,4 @@ class SimpleCLIOptionHandler {
   }
 }
 
-module.exports = SimpleCLIOptionHandler
+module.exports = SimpleCLIOptionMan
