@@ -2,7 +2,7 @@
 ## About
 This project is a Hangman game played through the command-line alongside a solver bot.
 
-This was inspired by an [assignment from Stanford's CS 106A: Programming Methodologies class](https://web.stanford.edu/class/archive/cs/cs106a/cs106a.1124/handouts/200%20Assignment%204.pdf) and a [challenge from Code Golf Stack Exchange](https://codegolf.stackexchange.com/questions/25496/write-a-hangman-solver). The main differences are that the project is coded in JavaScript instead of Java, there are no graphics, and the solver does not actually use the game program code supplied by the Code Gold Stack Exchange post although it does still roughly follow the same rules.
+This was inspired by an [assignment from Stanford's CS 106A: Programming Methodologies class](https://web.stanford.edu/class/archive/cs/cs106a/cs106a.1124/handouts/200%20Assignment%204.pdf) and a [challenge from Code Golf Stack Exchange](https://codegolf.stackexchange.com/questions/25496/write-a-hangman-solver). The main differences are that the project is coded in JavaScript instead of Java, there are no graphics, and the solver does not actually use the game program code supplied by the Code Golf Stack Exchange post although it does still roughly follow the same rules.
 
 ## Playing the Game
 This is the command for running the game:
@@ -15,8 +15,6 @@ So a simple example of this is:
 node hangman lexiconA.txt
 ```
 
-*Note: lexiconA.txt was taken from the CS 106A assignment, and lexiconB.txt was taken from the Code Golf Stack Exchange challenge. lexiconB.txt is much larger than lexiconA.txt.*
-
 ### Rules
 The game follows the following rules:
 - By default, the game will give the player 8 tries to guess the word.
@@ -25,12 +23,17 @@ The game follows the following rules:
 - Guessing a new correct letter will not change the amount of remaining guesses.
 - Guessing an already found correct letter will also not change the amount of remaining guesses.
 - Only 1 character can be guessed at a game.
+- The game ends when all letters in the answer are correctly guessed or when 0 guesses remain.
 
 ### Lexicon
-A valid lexicon must have the following properties:
+A valid lexicon file must have the following properties:
 - Must be a text file.
 - Each line must contain only one word.
 - Words can only be comprised of alphabetical characters.
+
+The project comes with two premade lexicon files:
+- lexiconA.txt: Taken from the CS 106A assignment. Contains 10 words.
+- lexiconB.txt: Taken from the Code Golf Stack Exchange challenge. Contains 4096 words.
 
 ### Options
 | Character | Description                                                                   |
