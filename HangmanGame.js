@@ -2,12 +2,13 @@
  * HANGMAN GAME
  * Hangman game played with the command line.
  * 
- * The game will give the player 8 tries to guess the word.
+ * By default, the game will give the player 8 tries to guess the word.
  * Each word is randomly selected from a pool of words determined in the lexicon text file.
  * Guessing an incorrect letter will decrement the amount of remaining guesses by 1.
  * Guessing a new correct letter will not change the amount of remaining guesses.
  * Guessing an already found correct letter will also not change the amount of remaining guesses.
  * Only 1 character can be guessed at a game.
+ * The game ends when all letters in the answer are correctly guessed or when 0 guesses remain.
  * 
  * When passing in the -h flag, the game will run in hard mode and reduces the amount of guesses to 6.
  * When passing in the -d flag, the game will run in debug mode which will show the answer when the game starts.
