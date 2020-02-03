@@ -32,8 +32,8 @@ A valid lexicon file must have the following properties:
 - Words can only be comprised of alphabetical characters.
 
 The project comes with two premade lexicon files:
-- lexiconA.txt: Taken from the CS 106A assignment. Contains 10 words.
-- lexiconB.txt: Taken from the Code Golf Stack Exchange challenge. Contains 4096 words.
+- [lexiconA.txt](./lexiconA.txt): Taken from the CS 106A assignment. Contains 10 words.
+- [lexiconB.txt](./lexiconB.txt): Taken from the Code Golf Stack Exchange challenge. Contains 4096 words.
 
 ### Options
 | Character | Description                                                                   |
